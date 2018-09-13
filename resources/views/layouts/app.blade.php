@@ -26,13 +26,14 @@
             @yield('content')
         </div>
     </div>
+    
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script> -->
     <!--  do edytora tekstu start -->
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace( 'article-ckeditor' );
-</script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
     <!--  do edytora tekstu END -->
 </body>
 </html>
