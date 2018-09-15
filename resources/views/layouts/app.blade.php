@@ -19,7 +19,7 @@
 <body>
     <div id="app">
       @include('inc.navbar')
-        <div class="container py-4">
+        <div class="container py-4 mt-4">
             @include('inc.messages')
             @yield('content')
         </div>

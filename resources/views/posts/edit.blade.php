@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <h1>Edycja Posta</h1>
+  <h1>Edycja Wpisu</h1>
   {!! Form::open(['action' => ['PostsController@update',$post->id], 'method' => 'POST']) !!}
     <div class="foem-group">
       {{Form::label('title','Tytuł')}}

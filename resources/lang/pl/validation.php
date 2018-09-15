@@ -140,6 +140,10 @@ return [
     |
     */
 
+    // 'attributes' => [
+    // ],
     'attributes' => [
-    ],
+   'body' =>'"Treść Wiadomości"',
+   'title'=>'"Tytuł"'
+   ],
 ];
