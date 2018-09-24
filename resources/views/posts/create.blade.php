@@ -2,7 +2,7 @@
 
 @section('content')
   <h1>Napisz Wiadomość</h1>
-  {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype'=> 'multipart/data']) !!}
+  {!! Form::open(['action' => 'PostsController@store', 'method' => 'POST', 'enctype'=> 'multipart/form-data']) !!}
     <div class="foem-group">
       {{Form::label('title','Tytuł')}}
       {{Form::text('title','',['class' => 'form-control', 'placeholder' => 'Tytuł'])}}
