@@ -6,7 +6,7 @@
   <h1>{!!$post->title!!}</h1>
     <!-- <h3>{{$post->body}}</h3> -->
     <div class="alert alert-secondary">
-      <img style ="width:100%" src="/storage/cover_images/{{$post->cover_image}}">
+      <img style ="width:100%" src="../blog/storage/app/public/cover_images/{{$post->cover_image}}">
       <h3>{!!$post->body!!}</h3>
     </div>
   <small>Dodane : {{$post->created_at}} przez : {{$post->user->name}}</small><br>
