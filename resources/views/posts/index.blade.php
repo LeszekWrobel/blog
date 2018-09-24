@@ -11,7 +11,10 @@
           </div>
           <div class="col-md-8 col-sm-8">
             <h3> <a href="/posts/{{$post->id}}">{{$post->title}}</a></h3>
-            <small>Dodane : {{$post->created_at}} przez : {{$post->user->name}}</small>
+            <small>Dodane : {{$post->created_at}} przez : {{$post->user->name}}</small><br>
+            @if($post->updated_at != '')
+            <small>Ostatnia Edycja : {{$post->updated_at}}</small>
+            @endif
           </div>
         </div>
       </div>
